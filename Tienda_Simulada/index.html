@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Best Shopping | Ofertas del día</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+  <h1>Best Shopping</h1>
+  <p>Las mejores ofertas en tecnología</p>
+</header>
+
+<main>
+
+  <h2 class="titulo-ofertas">🔥 Ofertas del día</h2>
+
+  <section class="productos">
+
+    <div class="producto">
+      <img src="imagenes/audifonos.jpg">
+      <h3>Audífonos inalámbricos</h3>
+      <p class="precio">$799 MXN</p>
+      <button onclick="seleccionarProducto('Audífonos inalámbricos', 799)">
+        Comprar
+      </button>
+    </div>
+
+    <div class="producto">
+      <img src="imagenes/smartwatch.jpg">
+      <h3>Smartwatch deportivo</h3>
+      <p class="precio">$1,299 MXN</p>
+      <button onclick="seleccionarProducto('Smartwatch deportivo', 1299)">
+        Comprar
+      </button>
+    </div>
+
+    <div class="producto">
+      <img src="imagenes/bocina.jpg">
+      <h3>Bocina Bluetooth</h3>
+      <p class="precio">$999 MXN</p>
+      <button onclick="seleccionarProducto('Bocina Bluetooth', 999)">
+        Comprar
+      </button>
+    </div>
+
+  </section>
+
+  <section class="checkout">
+    <h2>Finalizar compra</h2>
+
+    <p class="aviso">
+      Sitio de simulación académica para la materia de Ciberseguridad.
+      Los datos ingresados pertenecen únicamente a los participantes del proyecto.
+    </p>
+
+    <form id="formCompra">
+      <input type="text" id="nombre" placeholder="Nombre completo" required>
+      <input type="email" id="correo" placeholder="Correo electrónico" required>
+      <input type="text" id="direccion" placeholder="Dirección" required>
+
+      <button type="button" onclick="enviarFormulario()">
+  Confirmar compra
+</button>
+    </form>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
